@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+      {
+          "src": "DownloadLog.js",
+          "use": "@now/node"
+      }
+  ],
+  "routes": [
+      {
+          "src": "/(.*)",
+          "dest": "DownloadLog.js"
+      }
+  ]
+}
